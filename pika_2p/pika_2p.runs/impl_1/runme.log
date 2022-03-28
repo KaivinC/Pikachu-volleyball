@@ -1,0 +1,297 @@
+
+*** Running vivado
+    with args -log pika_2P.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source pika_2P.tcl -notrace
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source pika_2P.tcl -notrace
+Command: link_design -top pika_2P -part xc7a12ticsg325-1L
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a12ticsg325-1L
+INFO: [Netlist 29-17] Analyzing 4882 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 5 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'pika_2P' is not ideal for floorplanning, since the cellview 'sram' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/GoogleDrive/Sophomore/DLAB/Pika/pika_2p/pika_2p.srcs/constrs_1/lab10.xdc]
+CRITICAL WARNING: [Vivado 12-1815] Setting property 'IOSTANDARD' is not allowed for GT terminals. [D:/GoogleDrive/Sophomore/DLAB/Pika/pika_2p/pika_2p.srcs/constrs_1/lab10.xdc:9]
+CRITICAL WARNING: [Common 17-69] Command failed: 'C2' is not a valid site or package pin name. [D:/GoogleDrive/Sophomore/DLAB/Pika/pika_2p/pika_2p.srcs/constrs_1/lab10.xdc:12]
+CRITICAL WARNING: [Common 17-69] Command failed: 'H5' is not a valid site or package pin name. [D:/GoogleDrive/Sophomore/DLAB/Pika/pika_2p/pika_2p.srcs/constrs_1/lab10.xdc:24]
+CRITICAL WARNING: [Common 17-69] Command failed: 'T9' is not a valid site or package pin name. [D:/GoogleDrive/Sophomore/DLAB/Pika/pika_2p/pika_2p.srcs/constrs_1/lab10.xdc:26]
+CRITICAL WARNING: [Common 17-69] Command failed: 'T10' is not a valid site or package pin name. [D:/GoogleDrive/Sophomore/DLAB/Pika/pika_2p/pika_2p.srcs/constrs_1/lab10.xdc:27]
+CRITICAL WARNING: [Common 17-69] Command failed: 'B8' is not a valid site or package pin name. [D:/GoogleDrive/Sophomore/DLAB/Pika/pika_2p/pika_2p.srcs/constrs_1/lab10.xdc:35]
+CRITICAL WARNING: [Common 17-69] Command failed: 'M13' is not a valid site or package pin name. [D:/GoogleDrive/Sophomore/DLAB/Pika/pika_2p/pika_2p.srcs/constrs_1/lab10.xdc:62]
+CRITICAL WARNING: [Common 17-69] Command failed: 'R10' is not a valid site or package pin name. [D:/GoogleDrive/Sophomore/DLAB/Pika/pika_2p/pika_2p.srcs/constrs_1/lab10.xdc:63]
+CRITICAL WARNING: [Common 17-69] Command failed: 'R11' is not a valid site or package pin name. [D:/GoogleDrive/Sophomore/DLAB/Pika/pika_2p/pika_2p.srcs/constrs_1/lab10.xdc:64]
+Finished Parsing XDC File [D:/GoogleDrive/Sophomore/DLAB/Pika/pika_2p/pika_2p.srcs/constrs_1/lab10.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 683.313 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4080 instances were transformed.
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E, RAMS64E): 12 instances
+  RAM16X1S => RAM32X1S (RAMS32): 24 instances
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 4032 instances
+  RAM32X1S => RAM32X1S (RAMS32): 12 instances
+
+7 Infos, 1 Warnings, 9 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 683.313 ; gain = 393.488
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a12ti'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a12ti'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 695.324 ; gain = 12.012
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 15a7775f7
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 1263.828 ; gain = 568.504
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 15a7775f7
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1409.090 ; gain = 0.191
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 1ab0dc306
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1409.090 ; gain = 0.191
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1b18aee70
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1409.090 ; gain = 0.191
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 1b18aee70
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1409.090 ; gain = 0.191
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 1b18aee70
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1409.090 ; gain = 0.191
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 1b18aee70
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1409.090 ; gain = 0.191
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1409.090 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: eae5b69a
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1409.090 ; gain = 0.191
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: eae5b69a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 1409.090 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: eae5b69a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1409.090 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1409.090 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: eae5b69a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1409.090 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+24 Infos, 1 Warnings, 9 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 1409.090 ; gain = 725.777
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1409.090 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1409.090 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/GoogleDrive/Sophomore/DLAB/Pika/pika_2p/pika_2p.runs/impl_1/pika_2P_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file pika_2P_drc_opted.rpt -pb pika_2P_drc_opted.pb -rpx pika_2P_drc_opted.rpx
+Command: report_drc -file pika_2P_drc_opted.rpt -pb pika_2P_drc_opted.pb -rpx pika_2P_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/GoogleDrive/Sophomore/DLAB/Pika/pika_2p/pika_2p.runs/impl_1/pika_2P_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1409.090 ; gain = 0.000
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a12ti'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a12ti'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1409.090 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: d5fbfb7f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1409.090 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1409.090 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced terminals (6) is greater than number of available sites (0).
+The following are banks with available pins: 
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 1 Drv: 12  has only 0 sites available on device, but needs 6 sites.
+	Term: VGA_GREEN[0]
+	Term: usr_led[0]
+	Term: usr_led[2]
+	Term: usr_led[3]
+	Term: VGA_HSYNC
+	Term: VGA_VSYNC
+
+
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced terminals (2) is greater than number of available sites (0).
+The following are banks with available pins: 
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 1 Drv: 12  has only 0 sites available on device, but needs 6 sites.
+	Term: VGA_GREEN[0]
+	Term: usr_led[0]
+	Term: usr_led[2]
+	Term: usr_led[3]
+	Term: VGA_HSYNC
+	Term: VGA_VSYNC
+
+
+ IO Group: 1 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  In   RangeId: 1  has only 0 sites available on device, but needs 2 sites.
+	Term: usr_btn[3]
+	Term: reset_n
+
+
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced terminals (8) is greater than number of available sites (0).
+The following are banks with available pins: 
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 1 Drv: 12  has only 0 sites available on device, but needs 6 sites.
+	Term: VGA_GREEN[0]
+	Term: usr_led[0]
+	Term: usr_led[2]
+	Term: usr_led[3]
+	Term: VGA_HSYNC
+	Term: VGA_VSYNC
+
+
+ IO Group: 1 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  In   RangeId: 1  has only 0 sites available on device, but needs 2 sites.
+	Term: usr_btn[3]
+	Term: reset_n
+
+
+ERROR: [Place 30-374] IO placer failed to find a solution
+Below is the partial placement that can be analyzed to see if any constraint modifications will make the IO placement problem easier to solve.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                     IO Placement : Bank Stats                                                                           |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+| Id | Pins  | Terms |                               Standards                                |                IDelayCtrls               |  VREF  |  VCCO  |   VR   | DCI |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|  0 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 14 |    50 |    11 | LVCMOS33(11)                                                           |                                          |        |  +3.30 |    YES |     |
+| 15 |    50 |     3 | LVCMOS33(3)                                                            |                                          |        |  +3.30 |    YES |     |
+| 34 |    50 |     1 | LVCMOS33(1)                                                            |                                          |        |  +3.30 |    YES |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|    |   150 |    15 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+
+IO Placement:
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| BankId |             Terminal | Standard        | Site                 | Pin                  | Attributes           |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 14     | VGA_BLUE[0]          | LVCMOS33        | IOB_X0Y22            | R16                  |                      |
+|        | VGA_BLUE[1]          | LVCMOS33        | IOB_X0Y32            | N16                  |                      |
+|        | VGA_BLUE[2]          | LVCMOS33        | IOB_X0Y33            | N14                  |                      |
+|        | VGA_BLUE[3]          | LVCMOS33        | IOB_X0Y17            | U17                  |                      |
+|        | VGA_GREEN[1]         | LVCMOS33        | IOB_X0Y12            | R13                  |                      |
+|        | VGA_GREEN[2]         | LVCMOS33        | IOB_X0Y25            | R15                  |                      |
+|        | VGA_GREEN[3]         | LVCMOS33        | IOB_X0Y28            | P15                  |                      |
+|        | VGA_RED[0]           | LVCMOS33        | IOB_X0Y19            | T18                  |                      |
+|        | VGA_RED[1]           | LVCMOS33        | IOB_X0Y20            | R18                  |                      |
+|        | VGA_RED[2]           | LVCMOS33        | IOB_X0Y29            | P18                  |                      |
+|        | VGA_RED[3]           | LVCMOS33        | IOB_X0Y31            | N17                  |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 15     | usr_btn[0]           | LVCMOS33        | IOB_X0Y96            | D9                   |                      |
+|        | usr_btn[1]           | LVCMOS33        | IOB_X0Y95            | C9                   |                      |
+|        | usr_btn[2]           | LVCMOS33        | IOB_X0Y94            | B9                   |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 34     | usr_led[1]           | LVCMOS33        | IOB_X1Y46            | J5                   |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+
+WARNING: [Place 30-87] Partially locked IO Bus is found. Following components of the IO Bus VGA_GREEN are not locked:  'VGA_GREEN[0]' 
+WARNING: [Place 30-87] Partially locked IO Bus is found. Following components of the IO Bus usr_btn are not locked:  'usr_btn[3]' 
+WARNING: [Place 30-87] Partially locked IO Bus is found. Following components of the IO Bus usr_led are not locked:  'usr_led[3]'  'usr_led[2]'  'usr_led[0]' 
+ERROR: [Place 30-640] Place Check : This design requires more F7 Muxes cells than are available in the target device. This design requires 8596 of such cell types but only 7300 compatible sites are available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device.
+ERROR: [Place 30-640] Place Check : This design requires more F8 Muxes cells than are available in the target device. This design requires 4250 of such cell types but only 3650 compatible sites are available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device.
+ERROR: [Place 30-640] Place Check : This design requires more Slice LUTs cells than are available in the target device. This design requires 19684 of such cell types but only 8000 compatible sites are available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device. Please set tcl parameter "drc.disableLUTOverUtilError" to 1 to change this error to warning.
+ERROR: [Place 30-640] Place Check : This design requires more LUT as Memory cells than are available in the target device. This design requires 16188 of such cell types but only 5000 compatible sites are available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device. Please set tcl parameter "drc.disableLUTOverUtilError" to 1 to change this error to warning.
+ERROR: [Place 30-640] Place Check : This design requires more LUT as Distributed RAM cells than are available in the target device. This design requires 16188 of such cell types but only 5000 compatible sites are available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device. Please set tcl parameter "drc.disableLUTOverUtilError" to 1 to change this error to warning.
+ERROR: [Place 30-640] Place Check : This design requires more MUXF7 cells than are available in the target device. This design requires 8596 of such cell types but only 7300 compatible sites are available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device.
+ERROR: [Place 30-640] Place Check : This design requires more MUXF8 cells than are available in the target device. This design requires 4250 of such cell types but only 3650 compatible sites are available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device.
+ERROR: [Place 30-640] Place Check : This design requires more RAMS64E cells than are available in the target device. This design requires 16152 of such cell types but only 5000 compatible sites are available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: b0fddb2f
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1409.090 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: b0fddb2f
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1409.090 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'Implementation Feasibility check failed, Please see the previously displayed individual error or warning messages for more details.'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: b0fddb2f
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1409.090 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+42 Infos, 4 Warnings, 9 Critical Warnings and 14 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Wed Jan  1 15:26:27 2020...

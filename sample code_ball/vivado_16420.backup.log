@@ -1,0 +1,412 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Dec 29 21:23:23 2019
+# Process ID: 16420
+# Current directory: C:/Users/CHEN/Downloads/sample code
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent856 C:\Users\CHEN\Downloads\sample code\lab10.xpr
+# Log file: C:/Users/CHEN/Downloads/sample code/vivado.log
+# Journal file: C:/Users/CHEN/Downloads/sample code\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/CHEN/Downloads/sample code/lab10.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 729.359 ; gain = 109.867
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319A438D0A
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Dec 29 21:32:48 2019] Launched synth_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/synth_1/runme.log
+[Sun Dec 29 21:32:48 2019] Launched impl_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Dec 29 21:42:59 2019] Launched synth_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/synth_1/runme.log
+[Sun Dec 29 21:42:59 2019] Launched impl_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Netlist 29-17] Analyzing 50 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.160 . Memory (MB): peak = 2852.883 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.160 . Memory (MB): peak = 2852.883 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2852.883 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:38 ; elapsed = 00:00:34 . Memory (MB): peak = 3005.082 ; gain = 1023.320
+close_design
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Dec 29 21:54:19 2019] Launched synth_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sun Dec 29 21:55:53 2019] Launched impl_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Dec 29 21:58:51 2019] Launched synth_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/synth_1/runme.log
+[Sun Dec 29 21:58:51 2019] Launched impl_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Dec 29 22:04:57 2019] Launched synth_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sun Dec 29 22:05:50 2019] Launched impl_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Dec 29 22:07:19 2019] Launched impl_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Dec 29 23:13:30 2019] Launched synth_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sun Dec 29 23:14:24 2019] Launched impl_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Dec 29 23:16:08 2019] Launched impl_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Dec 29 23:53:45 2019] Launched synth_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sun Dec 29 23:54:38 2019] Launched impl_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Dec 29 23:56:01 2019] Launched impl_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Dec 29 23:58:09 2019] Launched synth_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sun Dec 29 23:59:02 2019] Launched impl_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Dec 30 00:00:27 2019] Launched impl_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Dec 30 00:05:24 2019] Launched synth_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/synth_1/runme.log
+[Mon Dec 30 00:05:24 2019] Launched impl_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Dec 30 00:15:55 2019] Launched synth_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/synth_1/runme.log
+[Mon Dec 30 00:15:55 2019] Launched impl_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Dec 30 02:35:01 2019] Launched synth_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/synth_1/runme.log
+[Mon Dec 30 02:35:01 2019] Launched impl_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 79 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.418 . Memory (MB): peak = 3007.328 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.421 . Memory (MB): peak = 3007.328 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3007.328 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3007.328 ; gain = 2.246
+close_design
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Dec 30 02:40:00 2019] Launched synth_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/synth_1/runme.log
+[Mon Dec 30 02:40:00 2019] Launched impl_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Dec 30 02:45:06 2019] Launched synth_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/synth_1/runme.log
+[Mon Dec 30 02:45:06 2019] Launched impl_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 82 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.267 . Memory (MB): peak = 3140.324 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.267 . Memory (MB): peak = 3140.324 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3140.324 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'open_run' was cancelled
+close_design
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Dec 30 02:51:15 2019] Launched synth_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/synth_1/runme.log
+[Mon Dec 30 02:51:15 2019] Launched impl_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Dec 30 02:54:44 2019] Launched synth_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/synth_1/runme.log
+[Mon Dec 30 02:54:44 2019] Launched impl_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Dec 30 02:58:13 2019] Launched synth_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon Dec 30 02:59:07 2019] Launched impl_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Dec 30 03:00:34 2019] Launched impl_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Dec 30 03:02:09 2019] Launched synth_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon Dec 30 03:03:01 2019] Launched impl_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Dec 30 03:04:23 2019] Launched impl_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Dec 30 03:08:32 2019] Launched synth_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon Dec 30 03:09:27 2019] Launched impl_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Dec 30 03:11:01 2019] Launched impl_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Dec 30 03:21:14 2019] Launched synth_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/synth_1/runme.log
+[Mon Dec 30 03:21:14 2019] Launched impl_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Dec 30 03:27:23 2019] Launched synth_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/synth_1/runme.log
+[Mon Dec 30 03:27:23 2019] Launched impl_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Dec 30 03:30:54 2019] Launched synth_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/synth_1/runme.log
+[Mon Dec 30 03:30:54 2019] Launched impl_1...
+Run output will be captured here: C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/CHEN/Downloads/sample code/lab10.runs/impl_1/lab10.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 30 04:08:35 2019...
